@@ -1,0 +1,99 @@
+/* aleo-regular - latin */
+@font-face {
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+        url('../fonts/aleo-v11-latin-regular.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/aleo-v11-latin-regular.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* aleo-700 - latin */
+@font-face {
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+        url('../fonts/aleo-v11-latin-700.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/aleo-v11-latin-700.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+body {
+    font-family: 'Aleo';
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container {
+    max-width: 30rem;
+    margin: auto;
+    position: relative;
+}
+
+h1 {
+    text-align: center;
+    padding-block: 1.5rem;
+}
+
+main {
+    flex-grow: 1;
+    height: 100%;
+    display: flex;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+
+#hexaColor,
+#rgbColor {
+    cursor: copy;
+}
+
+#hexaColor {
+    font-size: 4rem;
+}
+
+#reload {
+    position: absolute;
+    width: 15rem;
+    left: calc(50% - 7.5rem);
+    bottom: 15rem;
+    padding: 0.4rem 1rem;
+    border-radius: 2rem;
+    box-shadow: .2rem .2rem .2rem black;
+}
+
+.alert {
+    position: absolute;
+    width: 15rem;
+    height: 3rem;
+    background-color: #fff;
+    color: black;
+    border: 1px dotted grey;
+    padding: .5rem 1rem;
+    left: calc(50% - 7.5rem);
+    top: -4rem;
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+}
+
+.alert.hide {
+    display: none;
+}
+
+.main-footer {
+    display: flex;
+    text-align: center;
+    padding-block: 1rem;
+}
